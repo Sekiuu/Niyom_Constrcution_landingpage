@@ -4,13 +4,13 @@ import Link from 'next/link'
 
 function Service_intro() {
     return (
-        <section id='services-intro' className='md:p-16 md:pt-30 w-full bg-neutral-800'>
+        <section className='md:p-16 md:pt-30 w-full bg-neutral-800 transition-all duration-300'>
             <div className='grid lg:grid-cols-4 grid-cols-2 border border-amber-600'>
                 <div className='aspect-square col-span-2 border border-amber-600'>
                     <Image src={'/pic/team1.jpg'} width={1024} height={1024} sizes='50vw' alt='team1'
                         className='object-cover aspect-square' />
                 </div>
-                <div className='col-span-2 border border-amber-600 aspect-square text-center overflow-hidden'>
+                <div id='services-intro' className='col-span-2 border border-amber-600 aspect-square text-center overflow-hidden'>
                     <div className={'flex flex-col w-full h-full justify-center kanit'}>
                         <h1 className='text-6xl font-bold mb-10 lg:mb-6 xl:text-6xl lg:text-5xl
                          max-md:text-4xl max-md:mb-5'>บริการของเรา</h1>
@@ -22,7 +22,7 @@ function Service_intro() {
                             <li className='hover:text-neutral-100'><Link href={'#'}>งานตกแต่งภายใน </Link></li>
                             <li className='hover:text-neutral-100'><Link href={'#'}>บริการปูพื้น</Link></li>
                         </div>
-                        <Link href={'#'} className='text-center w-[50%] mx-auto mt-10 lg:py-3 py-5 bg-amber-800
+                        <Link href={'./Services'} className='text-center w-[50%] mx-auto mt-10 lg:py-3 py-5 bg-amber-800
                         max-md:mt-5 max-md:py-2'>ดูข้อมูล</Link>
                     </div>
                 </div>
@@ -49,10 +49,10 @@ function Service_intro() {
                 </div>
 
                 <div className='col-span-2 border border-amber-600 md:aspect-square text-center overflow-hidden'>
-                    <div className='flex flex-col mx-auto w-[80%] py-[10%] xl:py-[15%] text-left'>
+                    <div className='flex flex-col mx-auto w-[80%] py-[10%] max-lg:py-[10%] xl:py-[15%] text-left'>
                         <h1 className='text-6xl max-md:text-5xl font-bold'>เกี่ยวกับเรา</h1>
-                        <h2 className='mt-15 text-[2rem] max-md:text-[1.5rem] max-xl:mt-5 text-neutral-400'>บริษัท นิยมคอนสตรัคชั่น<br />รับเหมาก่อสร้าง</h2>
-                        <p className='lg:mt-10 mt-20 max-md:mt-10 text-2xl max-md:text-[1rem]'>
+                        <h2 className='mt-15 max-lg:mt-5 text-[2rem] max-md:text-[1.5rem] text-neutral-400'>บริษัท นิยมคอนสตรัคชั่น<br />รับเหมาก่อสร้าง</h2>
+                        <p className='xl:mt-10 mt-5 max-lg:mt-20 max-md:mt-5 xl:text-2xl text-xl max-lg:text-2xl max-md:text-[1rem]'>
                             นี่คือส่วนของเนื้อหา เพิ่มข้อความของคุณและแก้ไขได้ง่ายๆ
                             ที่นี่ เพียงคลิก "แก้ไขข้อความ" หรือดับเบิลคลิกจากนั้นลงเนื้อหาของคุณ หรือแก้ไข
                             หรือเปลี่ยนแบบฟอนต์ได้เลย ที่ตรงนี้เหมาะอย่างยิ่งสำหรับการบอกเล่าเรื่องราวและแนะนำตัวให้ผู้ใช้รู้จักคุณมากยิ่งขึ้น
