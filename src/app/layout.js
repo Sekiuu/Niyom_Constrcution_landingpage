@@ -3,7 +3,8 @@ import "./globals.css";
 import kanit from "./fonts/Kanit";
 import Nav from "./component/Nav";
 import Contact from "./component/Contact";
-import { companyInfo } from "./Data/data";
+import { companyInfo } from "./Data/data.js";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],

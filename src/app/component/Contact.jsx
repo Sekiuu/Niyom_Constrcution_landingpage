@@ -2,7 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { useState } from 'react'
-import { web_lisence, ContactInfo } from '../Data/data'
+import { web_lisence, ContactInfo } from '../Data/data.js'
 
 function Contact() {
     const [form, setForm] = useState({
