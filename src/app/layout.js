@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import kanit from "./fonts/Kanit";
 import Nav from "./component/Nav";
+import Contact from "./component/Contact";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,10 +23,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased ${kanit.className}`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-neutral-800 ${kanit.className}`}
       >
         <Nav/>
         {children}
+        <Contact/>
       </body>
     </html>
   );
