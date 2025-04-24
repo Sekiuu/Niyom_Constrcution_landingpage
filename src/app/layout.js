@@ -3,7 +3,6 @@ import "./globals.css";
 import kanit from "./fonts/Kanit";
 import Nav from "./component/Nav";
 import Contact from "./component/Contact";
-import { companyInfo } from "./Data/data.js";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: companyInfo.company_name + " ปทุมธานี และ จังหวัดไกล้เคียง",
+  title: "บริษัท นิยมดีอิเล็กทริกซ์ ปทุมธานี และ จังหวัดไกล้เคียง",
     description: "รับเหมางานไฟฟ้า ปทุมธานี | บริษัท นิยมดีอิเล็กทริกซ์ บริการติดตั้งระบบไฟฟ้า บ้าน อาคาร โรงงาน เดินสายไฟ ซ่อมตู้ไฟ ปรับปรุงระบบไฟ ไฟดับ รับเดินสายไฟในบ้าน ไฟรั่ว เรียกช่าง โดยทีมช่างมืออาชีพ ประสบการณ์ยาวนาน บริการทั่วปทุมธานี"
   
 };
