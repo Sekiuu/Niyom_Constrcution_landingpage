@@ -11,7 +11,7 @@ function Service() {
           <h1>หัวข้อตัวอย่าง</h1>
         </div>
         <div className='box-m row-start-2'>
-          <Image alt='' width={1024} height={1024} src={'./icon/no_img.svg'} className='bg-white object-cover lg:aspect-[3/4] aspect-video' />
+          <Image alt='NO IMG' width={1024} height={1024} src={'./icon/no_img.svg'} className='bg-white object-cover lg:aspect-[3/4] aspect-video' />
         </div>
         {
           services.map((item, index) => (
