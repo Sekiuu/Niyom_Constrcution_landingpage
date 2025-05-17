@@ -12,7 +12,7 @@ export async function GET() {
     .map(
       (page) => `
     <url>
-      <loc>${baseUrl}/${page}</loc>
+      <loc>${baseUrl}${page}</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
     </url>
