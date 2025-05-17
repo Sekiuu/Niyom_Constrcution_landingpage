@@ -2,7 +2,12 @@ import React from 'react'
 import Image from 'next/image'
 import { serviceInfo } from '../Data/data.js'
 const { best_services, services } = serviceInfo;
+export const metadata = {
+  title: 'บริการของเรา รับเหมาทำไฟ',
+  description: services.map((data)=>(data.title + " " + data.description + " ")),
+}
 function Service() {
+
   return (
     <section className='w-full lg:px-[5%] max-xl:pt-[20%] pt-[8%] flex'>
       <div className='service_page border w-full'>
